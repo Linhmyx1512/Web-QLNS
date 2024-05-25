@@ -1,0 +1,235 @@
+.tradition {
+  &-swiper {
+    @include container;
+  }
+
+  .pink {
+    color: #4580c2;
+  }
+
+  .normal-size {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .anh-Che-Dinh-Son {
+    .anh {
+      font-size: 24px;
+    }
+
+    .name {
+      font-size: 36px;
+    }
+
+    .des {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .prizes {
+    .borders {
+      border-radius: 20px;
+
+      div {
+        text-align: center;
+        height: 85px;
+      }
+    }
+
+    .text-in-prize {
+      font-size: 22px;
+    }
+  }
+
+  .swipers {
+    background-color: #ebf6fb;
+    .grade {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    .sw {
+      text-align: center;
+    }
+
+    .des-swipers {
+      font-size: 18px;
+    }
+
+    .name-swipers {
+      font-size: 20px;
+    }
+  }
+
+  .swiper {
+    @include container;
+    padding: 0px;
+    @include breakpoint-up(md) {
+      padding: 0px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.7;
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+
+    .swiper-slide-active img {
+      width: 190px;
+      height: 190px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    }
+
+    .swiper-button-prev {
+      background-image: url("/static/images/prize-phong-truyen-thong/chevron-circle-left-solid.svg");
+      background-repeat: no-repeat;
+      // background-size: 100% auto;
+      background-position: center;
+    }
+
+    .swiper-button-prev::after {
+      display: none;
+    }
+
+    .swiper-button-next {
+      background-image: url("/static/images/prize-phong-truyen-thong/chevron-circle-right-solid.svg");
+      background-repeat: no-repeat;
+      // background-size: 100% auto;
+      background-position: center;
+    }
+
+    .swiper-button-next::after {
+      display: none;
+    }
+  }
+
+  .img-in-prize {
+    height: 277px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .border-img {
+    border-radius: 100%;
+    width: 148px;
+    height: 148px;
+    border: 5px white solid;
+    object-fit: cover;
+    // object-fit: none; /* Do not scale the image */
+    object-position: center 20%;
+  }
+
+  .btn {
+    background-color: #4580c2;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .btn:disabled {
+    background-color: #ccc;
+    cursor: no-drop;
+  }
+
+  @media (max-width: 1023px) {
+    .normal-size {
+      font-size: 16px;
+    }
+
+    .img-in-prize {
+      // border-radius: 20px !important;
+      height: 245px;
+    }
+
+    .anh-Che-Dinh-Son {
+      .anh {
+        font-size: 22px;
+      }
+
+      .name {
+        font-size: 34px;
+      }
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .member {
+      .grade {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .prizes {
+      .text-in-prize {
+        font-size: 20px;
+      }
+    }
+
+    .swipers {
+      .grade {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .des-swipers {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .normal-size {
+      font-size: 14px;
+    }
+
+    .img-in-prize {
+      // border-radius: 20px !important;
+      // height: 253px;
+      width: 100%;
+      height: auto;
+    }
+    .anh-Che-Dinh-Son {
+      .anh {
+        font-size: 18px;
+      }
+
+      .name {
+        font-size: 30px;
+      }
+    }
+
+    .title {
+      font-size: 26px;
+    }
+  }
+
+  .prizes {
+    .text-in-prize {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .menu .nav-item {
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu .nav-active,
+  .menu .nav-item:hover {
+    background-color: transparent;
+    color: #4580c2;
+  }
+}

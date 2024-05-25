@@ -1,0 +1,24 @@
+// Colors
+$activeColor: #4580c2;
+$backgroundColor1: #fff7f2;
+$backgroundColor2: #ebf6fb;
+$logoColor: #4580c2;
+$textColor: #000000;
+$blue: #cce4fe;
+$yellow: #ffd84c;
+$orange: #fecaca;
+
+// Font Sizes
+$text-sm: 14px;
+$text-md: 16px;
+$text-lg: 18px;
+
+$title-sm: 26px;
+$title-md: 30px;
+$title-lg: 32px;
+
+// font-falmily
+@font-face {
+  font-family: brush-up;
+  src: url("../../static/font/iCielBrushUp/iCielBrushUp.ttf");
+}

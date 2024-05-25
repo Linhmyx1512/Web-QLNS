@@ -1,0 +1,83 @@
+$breakpoints-up: ("sm": "640px", "md": "768px", "lg": "1024px", "xl": "1280px", "2xl": "1536px");
+$breakpoints-down: ("sm": "639px", "md": "767px", "lg": "1023px", "xl": "1279px", "2xl": "1535px");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+
+@mixin title-text {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.25rem;
+  color: $activeColor;
+  font-size: $title-sm;
+  @include breakpoint-up(md){
+    margin-bottom: 3.25rem;
+    font-size: $title-md;
+  }
+  @include breakpoint-up(lg){
+    margin-bottom: 4.25rem;
+    font-size: $title-lg;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0px auto;
+  max-width: 1166px;
+  @include breakpoint-up(md){
+    padding: 0 60px;
+  }
+}
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+     -moz-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
+@mixin animation-delay($animation-delay) {
+  -webkit-transition-delay: #{$animation-delay};
+     -moz-transition-delay: #{$animation-delay};
+       -o-transition-delay: #{$animation-delay};
+          transition-delay: #{$animation-delay};
+}
+
+@mixin keyframes($keyframes) {
+  @-webkit-keyframes #{$keyframes} { @content; }
+     @-moz-keyframes #{$keyframes} { @content; }
+       @-o-keyframes #{$keyframes} { @content; }
+          @keyframes #{$keyframes} { @content; }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: #{$transition};
+     -moz-transition: #{$transition};
+       -o-transition: #{$transition};
+          transition: #{$transition};
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: #{$transition-delay};
+     -moz-transition-delay: #{$transition-delay};
+       -o-transition-delay: #{$transition-delay};
+          transition-delay: #{$transition-delay};
+}

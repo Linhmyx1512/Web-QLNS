@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../static/images/ProPTIT.ico"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sự kiện - Tìm hiểu các sự kiện của CLB Lập Trình PTIT</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../static/tailwind.css" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/css/sukien.css" />
+    <link rel="stylesheet" href="../dist/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../dist/css/loading.css" />
+    <!-- wowJS -->
+    <link rel="stylesheet" href="../dist/css/animate.css" />
+    <!-- font Quicksand có Bold 700, Medium 500, Regular 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <div class="container">
+          <a href="/" class="logo">
+            <img
+              src="../static/images/logo.svg"
+              alt="Logo của CLB Lập Trình PTIT"
+            />
+            <h2>CLB Lập Trình PTIT</h2>
+          </a>
+          <nav class="nav" id="nav">
+            <div class="close_icon flex flex-row justify-between items-center">
+              <a href="#" class="logo-nav">
+                <img
+                  src="../static/images/logo.svg"
+                  alt="Logo của CLB Lập Trình PTIT"
+                />
+              </a>
+              <i class="fas fa-times text-4xl" id="hideMenu"></i>
+            </div>
+            <a href="/" class="nav-item">TRANG CHỦ</a>
+            <a href="/dao-tao/" class="nav-item">ĐÀO TẠO</a>
+            <a href="/su-kien/" class="nav-item nav-active">SỰ KIỆN</a>
+            <a href="/phong-truyen-thong/" class="nav-item"
+              >PHÒNG TRUYỀN THỐNG</a
+            >
+          </nav>
+          <img
+            class="show-menu-btn"
+            id="showMenu"
+            src="../static/images/list.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="training_banner">
+        <img
+          src="../static/images/event.jpeg"
+          alt="Sự kiện của CLB Lập Trình PTIT"
+          loading="lazy"
+        />
+        <div class="blur">
+          <div
+            class="intro text-center wow animate__backInLeft"
+            data-wow-duration="2s"
+          >
+            <h1>EVENTS</h1>
+            <p>
+              CLB thường xuyên có các sự kiện lớn nhỏ, được tổ chức giúp gắn kết
+              các thành viên trong CLB cũng như mở rộng các mối quan hệ bên
+              ngoài CLB. Các sự kiện tổ chức ra cũng là để mọi người giải trí
+              sau những giờ học trên trường cũng như ở CLB
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="navbox-wrapper">
+        <div class="container">
+          <div class="navbox flex gap-x-20">
+            <a
+              class="box p-5 w-1/2 text-center flex-1 wow animate__tada"
+              data-wow-duration="2s"
+              href="#noibo"
+            >
+              <div class="box__image">
+                <img
+                  src="../static/images/internal.jpg"
+                  alt="Sự kiện nội bộ"
+                  class="h-32 md:h-20 lg:h-32 object-cover w-full"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-5">NỘI BỘ</h3>
+            </a>
+
+            <a
+              class="box p-5 w-1/2 text-center flex-1 wow animate__tada"
+              data-wow-duration="2s"
+              href="#doingoai"
+            >
+              <div class="box__image">
+                <img
+                  src="../static/images/doingoai.jpeg"
+                  alt="Sự kiện đối ngoại"
+                  class="h-32 md:h-20 lg:h-32 object-cover w-full"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-5">ĐỐI NGOẠI</h3>
+            </a>
+
+            <a
+              class="box p-5 w-1/2 text-center flex-1 wow animate__tada"
+              data-wow-duration="2s"
+              href="#congdongs2b"
+            >
+              <div class="box__image">
+                <img
+                  src="../static/images/congdongs2b.jpeg"
+                  alt="Cộng đồng S2B"
+                  class="h-32 md:h-20 lg:h-32 object-cover w-full"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="mt-5">CỘNG ĐỒNG S2B</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduce-wrapper" id="noibo">
+        <div class="container">
+          <div class="introduce-content text-center">
+            <h2>Sự kiện nội bộ của clb</h2>
+            <p>
+              Các sự kiện được CLB tổ chức hết sức đa dạng từ các cuộc thi đến
+              các hoạt động ngoại khóa. Thành viên CLB sẽ luôn được trau dồi, ôn
+              tập kiến thức và gắn kết với nhau hơn như một đại gia đình. Mỗi sự
+              kiện luôn để lại trong lòng các thành viên một dấu ấn khó quên
+              trong quãng thời gian hoạt động và cả sau này
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper" id="biggame">
+        <div class="container">
+          <div class="flex event-introduce reverse">
+            <div
+              class="event-content w-1/2 p-20 bg-pink flex flex-col justify-center"
+            >
+              <h3 class="text-center">BIG GAME TRAINING</h3>
+
+              <p>
+                Biggame training là sự kiện thường niên được tổ chức với quy mô
+                lớn nhất diễn ra vào cuối mỗi kì training ProPTIT. Với sự tham
+                gia đông đảo của các anh chị, các bạn và các thành viên
+                training, sự kiện giúp các thành viên training được giao lưu làm
+                quen với nhau và tạo được nhiều dấu ấn, kỷ niệm khó quên trong
+                lòng mỗi người.
+              </p>
+            </div>
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/biggame_training.jpeg"
+                alt="BIG GAME TRAINING"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce">
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/spoj_tour.jpeg"
+                alt="SPOJ TOURNAMENT"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="event-content w-1/2 p-20 flex flex-col justify-center">
+              <h3 class="text-center">SPOJ TOURNAMENT</h3>
+
+              <p>
+                SPOJ TOURNAMENT là một cuộc thi lập trình nội bộ thường niên của
+                CLB Lập Trình PTIT. Đến với cuộc thi, các thí sinh sẽ phải trải
+                qua một cuộc đua gấp rút và phải hoàn thành mục tiêu - số lượng
+                bài đã được đặt ra trước đó trong thời gian sớm nhất có thể. Đây
+                là một cuộc thi quan trọng giúp các thành viên có thể rèn luyện
+                kỹ năng, học thêm nhiều kiến thức mới để dần hoàn thiện tư duy
+                cũng như tăng tốc độ code của mình.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce reverse">
+            <div
+              class="event-content w-1/2 p-20 bg-pink flex flex-col justify-center"
+            >
+              <h3 class="text-center">PROCWAR</h3>
+
+              <p>
+                Là một cuộc thi được tổ chức nhằm nâng cao tư duy thuật toán cho
+                các thành viên của CLB Lập Trình PTIT. Mỗi thành viên sẽ chuẩn
+                bị problems và solutions của từng bài sau đó sẽ được tổng hợp
+                thành một contest chung. Người chơi nào giải quyết được nhiều
+                problems nhất sẽ là người giành chiến thắng. Chính vì sự thú vị
+                của cuộc thi, PROCWAR luôn được các thành viên trong CLB tham
+                gia nồng nhiệt.
+              </p>
+            </div>
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/proCwar.png"
+                alt="proCwar"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper" id="dangoai">
+        <div class="container">
+          <div class="flex event-introduce">
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/camping.jpeg"
+                alt="camping"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="event-content w-1/2 p-20 flex flex-col justify-center">
+              <h3 class="text-center">Dã ngoại CLB</h3>
+
+              <p>
+                Các chuyến dã ngoại được tổ chức giúp thành viên CLB được thư
+                giãn sau những ngày học tập và hoạt động căng thẳng. Sự kiện này
+                là dịp gắn kết mọi người, rút ngắn khoảng cách giữa các thành
+                viên, tạo điều kiện để các thành viên có dịp chia sẻ với nhau về
+                cuộc sống, học tập.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce reverse">
+            <div
+              class="event-content w-1/2 p-20 bg-pink flex flex-col justify-center"
+            >
+              <h3 class="text-center">CUỘC THI GAME C++</h3>
+
+              <p>
+                Được khởi xướng bởi anh Triệu Khương Duy khóa D15, Game C++ đã
+                trở thành 1 cuộc thi hằng năm của CLB. Mỗi một sản phẩm đều là
+                một thử thách, đòi hỏi các thành viên phải nắm được những kiến
+                thức mình đã học về hướng đối tượng, các thuật toán,... và vận
+                dụng vào sản phẩm của mình một cách tốt nhất. Tiếp nối thành
+                công từ những anh chị khóa trước, Game C++ hứa hẹn sẽ tiếp tục
+                là một cuộc thi thú vị, ngày càng có nhiều sản phẩm chất lượng.
+              </p>
+            </div>
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/gameC++.png"
+                alt="gameC"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce">
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/pama-cup.png"
+                alt="pama-cup"
+                class="object-cover h-full w-full"
+                style="object-position: left"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="event-content w-1/2 p-20 flex flex-col justify-center">
+              <h3 class="text-center">PAMA-CUP</h3>
+              <p>
+                Pama-Cup là cuộc thi sử dụng ngôn ngữ lập trình C++. Với input
+                là các thông số của trò chơi, người chơi phải áp dụng các thuật
+                toán, giải thuật đồ thị để đưa ra hướng đi cho Pacman và Ghost
+                trong tựa game Pacman nổi tiếng. Đây là một cuộc rượt đuổi kịch
+                tính, hài hước nhưng không kém phần cạnh tranh và quyết liệt
+                giữa các thành viên trong CLB.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper" id="sinhnhat">
+        <div class="container">
+          <div class="flex event-introduce reverse">
+            <div
+              class="event-content w-1/2 p-20 bg-pink flex flex-col justify-center"
+            >
+              <h3 class="text-center">Sinh nhật CLB</h3>
+
+              <p>
+                Sinh nhật là một bữa tiệc không thể thiếu đối với mỗi CLB hằng
+                năm và hẳn là CLB Lập Trình PTIT cũng không phải ngoại lệ. Vào
+                sinh nhật, các thành viên CLB có dịp được ngồi lại trò chuyện
+                với nhau, hiểu thêm về truyền thống và con đường mà CLB Lập
+                Trình PTIT đã trải qua. Từ đó, các thành viên sẽ tổng kết những
+                việc đã làm được trong một năm và đề ra kế hoạch, đặt ra các mục
+                tiêu để CLB luôn luôn phát triển.
+              </p>
+            </div>
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/sinhnhat.jpeg"
+                alt="sinhnhat"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce">
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/proGApp.jpeg"
+                alt="proGApp"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="event-content w-1/2 p-20 flex flex-col justify-center">
+              <h3 class="text-center">ProGApp</h3>
+
+              <p>
+                ProGApp là một cuộc thi lập trình Ứng Dụng và Game bằng Java
+                thường niên dành cho thành viên từng khóa của CLB Lập Trình
+                PTIT. Cuộc thi yêu cầu các thành viên hoàn thành một sản phẩm từ
+                việc sử dụng ngôn ngữ lập trình Java và áp dụng các kiến thức về
+                lập trình hướng đối tượng. Đã có rất nhiều sản phẩm vô cùng chất
+                lượng và sáng tạo được tạo ra bới chính các thành viên CLB từ
+                cuộc thi này
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-introduce-wrapper">
+        <div class="container">
+          <div class="flex event-introduce reverse">
+            <div
+              class="event-content w-1/2 p-20 bg-pink flex flex-col justify-center"
+            >
+              <h3 class="text-center">PROPTIT MARATHON</h3>
+
+              <p>
+                <strong>“Có sức khỏe là có tất cả”</strong><br />
+                Hưởng ứng tinh thần trên, tất cả các thành viên của CLB Lập
+                Trình PTIT tham gia cuộc thi chạy Marathon. Cuộc thi đã tạo ra
+                không khí lành mạnh sau những giờ làm việc và học tập căng
+                thẳng, đồng thời nâng cao tinh thần thể dục thể thao của các
+                thành viên đang hoạt động trong CLB.
+              </p>
+            </div>
+            <div class="event-image w-1/2">
+              <img
+                src="../static/images/Marathon.png"
+                alt="Marathon"
+                class="object-cover h-full w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduce-wrapper" id="doingoai">
+        <div class="container">
+          <div class="introduce-content text-center">
+            <h2>Sự kiện đối ngoại của clb</h2>
+            <p>
+              CLB Lập Trình PTIT luôn hướng tới các sự kiện trong quốc gia và
+              khu vực với sự tham gia đông đảo của các thành viên. Đồng thời
+              hằng năm CLB cũng hợp tác với nhiều đơn vị khác để tạo ra những
+              cuộc thi, sân chơi bổ ích cho sinh viên ngành CNTT
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="foreign-affair-wrapper">
+        <div class="container">
+          <div class="foreign-affair-box flex">
+            <div
+              class="image-box w-2/5 pr-10 wow animate__bounceInLeft"
+              data-wow-duration="2s"
+            >
+              <img
+                src="../static/images/code-battle.jpeg"
+                alt="code-battle"
+                class="object-cover h-full w-full rounded-3xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="content-box w-3/5 flex flex-col justify-center">
+              <h3>Code Battle</h3>
+              <div class="hr w-1/1"></div>
+              <p>
+                Code Battle là cuộc thi được tổ chức nhằm mục đích phát huy tinh
+                thần học tập và là cơ hội cho sinh viên được giao lưu. Do các
+                câu lạc bộ đến từ các trường đại học khu vực Hà Nội: Đại học
+                Thăng Long, FPT và Học viện Bưu chính Viễn thông,... đồng tổ
+                chức.
+              </p>
+              <div class="hr-mb w-1/1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="foreign-affair-wrapper">
+        <div class="container">
+          <div class="foreign-affair-box flex">
+            <div
+              class="image-box w-2/5 pr-10 wow animate__bounceInLeft"
+              data-wow-duration="2s"
+            >
+              <img
+                src="../static/images/cuocduaso.jpeg"
+                alt="cuocduaso"
+                class="object-cover h-full w-full rounded-3xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="content-box w-3/5 flex flex-col justify-center">
+              <h3>Cuộc đua số</h3>
+              <div class="hr w-1/1"></div>
+              <p>
+                Cuộc đua số là cuộc thi lập trình công nghệ thường niên dành cho
+                các sinh viên yêu thích công nghệ trên toàn quốc được tổ chức
+                bởi tập đoàn FPT. Với mục đích tạo sân chơi hấp dẫn, bổ ích,
+                thúc đẩy đam mê học hỏi, cập nhật, thực hành và sáng tạo các
+                công nghệ mới trên thế giới, trên cơ sở hiểu biết và nắm vững
+                nhu cầu của các ngành công nghiệp cho sinh viên Việt Nam, góp
+                phần xây dựng nguồn lực chất lượng cao, đáp ứng nhu cầu của cuộc
+                cách mạng 4.0
+              </p>
+              <div class="hr-mb w-1/1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="foreign-affair-wrapper">
+        <div class="container">
+          <div class="foreign-affair-box flex">
+            <div
+              class="image-box w-2/5 pr-10 wow animate__bounceInLeft"
+              data-wow-duration="2s"
+            >
+              <img
+                src="../static/images/gamejam.jpeg"
+                alt="gamejam"
+                class="object-cover h-full w-full rounded-3xl"
+              />
+            </div>
+            <div class="content-box w-3/5 flex flex-col justify-center">
+              <h3>Game Jam</h3>
+              <div class="hr w-1/1"></div>
+              <p>
+                Game Jam là một cuộc thi mà người tham gia cố gắng tạo ra một
+                trò chơi điện tử từ đầu. Tuỳ thuộc vào hình thức, những người
+                tham gia cuộc thi có thể làm việc độc lập hoặc theo nhóm. Thời
+                lượng cho cuộc thi thường là từ 24 đến 72 giờ. Những người tham
+                gia thường là lập trình viên, nhà thiết kế trò chơi, nghệ sĩ,
+                nhà văn và những người khác trong lĩnh vực liên quan đến phát
+                triển trò chơi
+              </p>
+              <div class="hr-mb w-1/1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="foreign-affair-wrapper">
+        <div class="container">
+          <div class="foreign-affair-box flex">
+            <div
+              class="image-box w-2/5 pr-10 wow animate__bounceInLeft"
+              data-wow-duration="2s"
+            >
+              <img
+                src="../static/images/icpc.jpeg"
+                alt="icpc"
+                class="object-cover h-full w-full rounded-3xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="content-box w-3/5 flex flex-col justify-center">
+              <h3>ICPC PTIT</h3>
+              <div class="hr w-1/1"></div>
+              <p>
+                Nhằm mục đích nâng cao kỹ năng và niềm yêu thích lập trình cho
+                sinh viên, Học viện Công nghệ BCVT đã tổ chức kỳ thi lập trình
+                theo chuẩn ACM/ICPC từ năm 2010. Sự thành công của các kỳ thi
+                trước đã tạo nên một sân chơi vui và bổ ích cho sinh viên, góp
+                phần thúc đẩy phong trào học tập các môn lập trình và phát triển
+                phần mềm cũng như bước đầu nâng cao thành tích của đội tuyển
+                Olympic Tin học sinh viên.
+              </p>
+              <div class="hr-mb w-1/1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="foreign-affair-wrapper" id="talkshow">
+        <div class="container">
+          <div class="foreign-affair-box flex">
+            <div
+              class="image-box w-2/5 pr-10 wow animate__bounceInLeft"
+              data-wow-duration="2s"
+            >
+              <img
+                src="../static/images/talkshow.jpeg"
+                alt="talkshow"
+                class="object-cover h-full w-full rounded-3xl"
+                loading="lazy"
+              />
+            </div>
+            <div class="content-box w-3/5 flex flex-col justify-center">
+              <h3>TALKSHOW EGG</h3>
+              <div class="hr w-1/1"></div>
+              <p>
+                Được hợp tác tổ chức bới CLB Lập trình PTIT và CLB EGG dành cho
+                thành viên của cả hai CLB với chủ đề “Xu hướng phát triển AI”.
+                Buổi Talkshow đã gắn kết thành viên của cả 2 CLB với những trò
+                chơi vô cùng thú vị. Qua đó, các thành viên của cả 2 CLB đã có
+                cơ hội trao đổi, làm việc nhóm cùng nhau và biết thêm nhiều về
+                văn hóa của mỗi CLB.
+              </p>
+              <div class="hr-mb w-1/1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduce-wrapper">
+        <div class="container">
+          <div class="introduce-content text-center">
+            <h2>SỰ kiện của cộng đồng s2b</h2>
+            <p>
+              Cộng đồng S2B là cộng đồng sinh viên với 2 CLB thành viên: CLB Lập
+              trình PTIT và CLB Multimedia PTIT. Cộng đồng có nhiều hoạt động
+              thường niên để giao lưu, gắn kết giữa các thành viên và tri ân tới
+              các thế hệ đi trước.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="biggame-s2b-wrapper bg-pink" id="congdongs2b">
+        <div class="container">
+          <div class="biggame-s2b flex">
+            <div
+              class="biggame-s2b-content text-justify flex flex-col justify-start items-center w-1/2"
+            >
+              <h3>BIG GAME S2B</h3>
+              <p>
+                Là một hoạt động ngoại khóa thường niên được tổ chức nhằm mục
+                đích gắn kết các thành viên giữa hai câu lạc bộ thuộc cộng đồng
+                S2B là CLB Lập trình PTIT và CLB Multimedia PTIT. Đây là buổi để
+                2 bên CLB Multimedia PTIT và CLB PROPTIT gặp mặt, cùng nhau nhìn
+                lại chặng đường đã qua và đồng thời tri ân thế hệ đi trước.
+              </p>
+            </div>
+
+            <div class="biggame-s2b-slider p-16 w-1/2">
+              <div class="main-slide">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b1.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b2.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b3.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b4.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b5.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b6.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b7.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b8.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b9.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b10.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b11.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b12.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b13.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/biggames2b/s2b14.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="biggame-s2b-wrapper bg-blue">
+        <div class="container">
+          <div class="biggame-s2b flex reverse">
+            <div class="biggame-s2b-slider sinhnhat-s2b-slider p-16 w-1/2">
+              <div class="main-slide">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn1.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn2.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn3.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn4.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn5.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn6.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn7.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn8.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn9.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn10.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn11.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn12.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn13.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <img
+                          src="../static/images/s2b/sn14.jpeg"
+                          alt="slide_1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sinhnhat-s2b-content text-justify flex flex-col justify-center items-center w-1/2"
+            >
+              <h3>SINH NHẬT CỘNG ĐỒNG S2B</h3>
+              <p>
+                Sinh nhật S2B là dịp để 2 bên CLB Multimedia PTIT và CLB PROPTIT
+                gặp mặt, cùng nhau nhìn lại chặng đường đã qua và đồng thời tri
+                ân thế hệ đi trước. Bữa tiệc luôn tràn đầy sự ấm cúng, trẻ
+                trung, vui vẻ cùng với nhiều hoạt động sôi nổi giữa các thành
+                viên giữa hai CLB và khách mời, cùng tạo nên không khí một bữa
+                tiệc sinh nhật tuyệt vời nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-link">
+            <div class="footer-info">
+              <a href="#" class="mb-8 block">
+                <img
+                  src="../static/images/logoFooter.svg"
+                  alt="logo CLB Lap trinh ptit"
+                  class="mx-auto md:m-0"
+                />
+              </a>
+              <a href="tel:+84354618636" class="flex" target="_blank">
+                <img
+                  src="../static/images/phone.svg"
+                  alt="phone"
+                  class="mr-2"
+                />
+                085 872 4654
+              </a>
+              <a
+                href="mailto:clblaptrinhptit@gmail.com"
+                class="flex"
+                target="_blank"
+              >
+                <img
+                  src="../static/images/email.svg"
+                  alt="email"
+                  class="mr-2"
+                />
+                clblaptrinhptit@gmail.com
+              </a>
+              <a href="https://proptit.com" class="flex" target="_blank">
+                <img src="../static/images/web.svg" alt="github" class="mr-2" />
+                proptit.com
+              </a>
+            </div>
+            <div class="footer-info">
+              <h3 class="mt-2 mb-6">VỀ CHÚNG TÔI</h3>
+              <a href="#noibo" class="block"> Sự kiện nội bộ </a>
+              <a href="#doingoai" class="block"> Sự kiện đối ngoại </a>
+              <a href="#s2b" class="block"> Cộng đồng S2B </a>
+            </div>
+            <div class="footer-info">
+              <h3 class="mt-2 mb-6">SỰ KIỆN TIÊU BIỂU</h3>
+              <a href="#biggame" class="block"> Biggame </a>
+              <a href="#dangoai" class="block"> Dã ngoại </a>
+              <a href="#sinhnhat" class="block"> Sinh nhật </a>
+              <a href="#talkshow" class="block"> Talkshow </a>
+            </div>
+            <div class="footer-info">
+              <h3 class="mt-2 mb-6">TRANG KHÁC</h3>
+              <a href="/" class="block"> Trang chủ </a>
+              <a href="/dao-tao/" class="block"> Đào tạo </a>
+              <a href="/su-kien/" class="block active"> Sự kiện </a>
+              <a href="/phong-truyen-thong/" class="block">
+                Phòng truyền thống
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <p class="copyright">@2021 Design by WebTeam D18</p>
+          <div class="social">
+            <a href="https://www.facebook.com/clubproptit" target="_blank">
+              <img
+                src="../static/images/facebook.svg"
+                alt="facebook CLB Lập trình ptit"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCdOcZv16XwUi7bhawqPjV9g"
+              target="_blank"
+            >
+              <img
+                src="../static/images/youtube.svg"
+                alt="youtube CLB Lập trình ptit"
+              />
+            </a>
+            <a href="https://github.com/proptitclub" target="_blank">
+              <img
+                src="../static/images/github.svg"
+                alt="github CLB Lập trình ptit"
+              />
+            </a>
+          </div>
+          <p class="copyright-mb">@2021 Design by WebTeam D18</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/js/jquery.min.js" type="text/javascript"></script>
+    <script
+      src="../static/js/swiper-bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="../static/js/event.js" type="text/javascript"></script>
+    <script src="../dao-tao/training.js" type="text/javascript"></script>
+    <script src="../static/js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
